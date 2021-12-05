@@ -16,7 +16,7 @@ int main()
 	while (cin.fail())
 	{
 		cin.clear();
-		cin.ignore();
+		cin.ignore(1000, '\n');
 		cout << "\nInvalid Input try again \n\nInput a number \n\n";
 		cin >> number;
 	}
